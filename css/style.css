@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'Roboto';
   src: url("./fonts/Roboto-Regular.eot");
@@ -529,5 +530,121 @@ a {
   height: 1px;
   background: #19b5fe;
   bottom: 0;
+}
+
+.process__title {
+  color: #464646;
+  text-align: center;
+}
+
+.team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.team__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 45px 0;
+}
+
+.team__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #464646;
+  margin-bottom: 55px;
+  width: 30%;
+}
+
+.team__item-title {
+  font-size: 24px;
+  color: #19b5fe;
+  padding: 20px 0;
+}
+
+.team__quote {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #464646;
+  font-size: 18px;
+  line-height: 20px;
+  max-width: 945px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 72px;
+}
+
+.team__quote::before {
+  position: absolute;
+  content: '‟';
+  font-size: 100px;
+  font-weight: bold;
+  left: -10%;
+  top: 0;
+  color: #19b5fe;
+}
+
+.team__quote::after {
+  position: absolute;
+  content: '‟';
+  font-size: 100px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  font-weight: bold;
+  right: -10%;
+  bottom: 0;
+  color: #19b5fe;
+}
+
+.team__quote-title {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.team__quote-name {
+  font-weight: bold;
+  margin-top: 26px;
+  margin-bottom: 20px;
+}
+
+.team__quote-position {
+  font-size: 16px;
 }
 /*# sourceMappingURL=style.css.map */
