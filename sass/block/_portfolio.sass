@@ -1,0 +1,40 @@
+.portfolio
+    &__link
+        display: flex
+        justify-content: center
+        text-transform: uppercase
+        border: 1px solid #19b5fe
+        width: 70%
+        margin: 0 auto
+        border-radius: 50px
+        overflow: hidden
+        margin-bottom: 24px
+        &-item
+            color: #19b5fe
+            padding: 20px 40px
+            position: relative
+            transition: 0.3s all
+            display: inline-block
+            &:hover
+                background: #19b5fe
+                color: #ffffff
+                border-radius: 3px
+            &::before
+                position: absolute
+                content: ''
+                width: 1px
+                background: #19b5fe
+                height: 90%
+                top: 5%
+                right: 0
+            &:nth-child(4)
+                &::before
+                    display: none
+    &__gallery
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        margin-bottom: 20px
+        &-item
+            margin-bottom: 30px
+                
