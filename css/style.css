@@ -647,4 +647,43 @@ a {
 .team__quote-position {
   font-size: 16px;
 }
+
+.blog-section {
+  position: relative;
+  background: #f5f9fa;
+}
+
+.blog__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 68px;
+}
+
+.blog__item {
+  text-align: center;
+  width: 48%;
+}
+
+.blog__item-img {
+  margin-bottom: 38px;
+}
+
+.blog__item-img img {
+  width: 100%;
+}
+
+.blog__item-link {
+  font-size: 16px;
+  color: #19b5fe;
+  line-height: 20px;
+}
+
+.blog__item-link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
 /*# sourceMappingURL=style.css.map */
