@@ -7,6 +7,19 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'fontello';
+  src: url("../fonts/fontello.eot?90167141");
+  src: url("../fonts/fontello.eot?90167141#iefix") format("embedded-opentype"), url("../fonts/fontello.woff2?90167141") format("woff2"), url("../fonts/fontello.woff?90167141") format("woff"), url("../fonts/fontello.ttf?90167141") format("truetype"), url("../fonts/fontello.svg?90167141#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .contain {
   max-width: 1200px;
   width: 100%;
@@ -660,7 +673,7 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 68px;
+  padding-bottom: 68px;
 }
 
 .blog__item {
@@ -685,5 +698,179 @@ a {
 .blog__item-link:hover {
   text-decoration: underline;
   cursor: pointer;
+}
+
+.question {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.question-section {
+  position: relative;
+  background: url(../img/question_bg.png);
+  background-size: cover;
+  background-position: center center;
+}
+
+.question__title {
+  color: #fff;
+}
+
+.question__title::after {
+  background: #fff;
+}
+
+.question-description {
+  font-size: 26px;
+  margin-bottom: 50px;
+}
+
+.question__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 60px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.question__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.question__btn button {
+  width: 235px;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #19b5fe;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.question__form {
+  width: 70%;
+}
+
+.question__form-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.question__form-input input {
+  max-width: 240px;
+  width: 100%;
+  height: 50px;
+  padding: 15px 15px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+}
+
+.question__form textarea {
+  margin: 15px 0;
+  padding: 15px 15px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  width: 100%;
+}
+
+.question__contact {
+  margin-left: 30px;
+  position: relative;
+}
+
+.question__contact-phone::after {
+  content: '\e800';
+}
+
+.question__contact-whatsapp::after {
+  content: '\F232';
+}
+
+.question__contact-mail::after {
+  content: '\E801';
+}
+
+.question__contact-skype::after {
+  content: '\F17E';
+}
+
+.question__contact-telegram::after {
+  content: '\F2C6';
+}
+
+.question__contact-txt {
+  font-size: 16px;
+}
+
+.question__item {
+  position: relative;
+  font-size: 18px;
+  margin-bottom: 28px;
+  padding-left: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 28px;
+}
+
+.question__item::after {
+  position: absolute;
+  font-family: 'fontello';
+  left: 0;
+  height: 28px;
+  width: 28px;
+  top: 0;
+  border: 1px solid #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=style.css.map */

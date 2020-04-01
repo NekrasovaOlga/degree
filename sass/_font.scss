@@ -8,7 +8,20 @@
     font-weight: normal;
     font-style: normal;
 }
-
+@font-face {
+    font-family: 'fontello';
+    src: url('../fonts/fontello.eot?90167141');
+    src: url('../fonts/fontello.eot?90167141#iefix') format('embedded-opentype'),
+         url('../fonts/fontello.woff2?90167141') format('woff2'),
+         url('../fonts/fontello.woff?90167141') format('woff'),
+         url('../fonts/fontello.ttf?90167141') format('truetype'),
+         url('../fonts/fontello.svg?90167141#fontello') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
 @mixin roboto {
     font-family: 'Roboto';
+}
+@mixin fontello {
+    font-family: 'fontello';
 }

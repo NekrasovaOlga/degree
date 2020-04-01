@@ -1,0 +1,100 @@
+.question
+    color: #fff
+    display: flex
+    flex-direction: column
+    align-items: center
+    &-section
+        position: relative
+        background: url(../img/question_bg.png)
+        background-size: cover
+        background-position: center center
+    &__title
+        color: #fff
+        &::after
+            background: #fff
+    &-description
+        font-size: 26px
+        margin-bottom: 50px
+    &__block
+        display: flex
+        margin-bottom: 60px
+        justify-content: space-between
+        width: 100%
+        align-items: stretch
+    &__btn
+        display: flex
+        align-items: center
+        justify-content: center
+        button
+            width: 235px
+            height: 60px
+            display: flex
+            align-items: center
+            justify-content: center
+            background: #19b5fe
+            border-radius: 50px
+            outline: none
+            border: none
+            color: #ffffff
+            font-size: 16px
+    &__form
+        width: 70%
+        &-input
+            display: flex
+            justify-content: space-between
+            input
+                max-width: 240px
+                width: 100%
+                height: 50px
+                padding: 15px 15px
+                border-radius: 10px
+                outline: none
+                border: none
+        textarea
+            margin: 15px 0
+            padding: 15px 15px
+            border-radius: 10px
+            outline: none
+            border: none
+            width: 100%
+    &__contact
+        margin-left: 30px
+        position: relative
+        &-phone
+            &::after
+                content: '\e800'
+        &-whatsapp
+            &::after
+                content: '\F232'
+        &-mail
+            &::after
+                content: '\E801'
+        &-skype
+            &::after
+                content: '\F17E'
+        &-telegram
+            &::after
+                content: '\F2C6'
+        &-txt
+            font-size: 16px
+
+    &__item
+        position: relative
+        font-size: 18px
+        margin-bottom: 28px
+        padding-left: 40px
+        display: flex
+        align-items: center
+        height: 28px
+        &::after
+            position: absolute
+            +fontello
+            left: 0
+            height: 28px
+            width: 28px
+            top: 0
+            border: 1px solid #fff
+            display: flex
+            align-items: center
+            justify-content: center
+            
