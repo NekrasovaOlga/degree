@@ -4,17 +4,22 @@
         justify-content: center
         text-transform: uppercase
         border: 1px solid #19b5fe
-        width: 70%
+        position: relative
         margin: 0 auto
         border-radius: 50px
         overflow: hidden
         margin-bottom: 24px
+        width: 87%
         &-item
             color: #19b5fe
-            padding: 20px 40px
+            padding: 0 30px
+            width: 100%
+            display: flex
+            align-items: center
+            justify-content: center
+            height: 50px
             position: relative
             transition: 0.3s all
-            display: inline-block
             &:hover
                 background: #19b5fe
                 color: #ffffff
@@ -32,9 +37,12 @@
                     display: none
     &__gallery
         display: flex
-        flex-wrap: wrap
-        justify-content: space-between
+        flex-wrap: wrap 
         margin-bottom: 20px
+        align-content: start
         &-item
             margin-bottom: 30px
+            width: 33%
                 
+.hide
+    display: none

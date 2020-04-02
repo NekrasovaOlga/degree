@@ -105,19 +105,19 @@
             <div class="portfolio">
                 <h2 class="titles">Портфолио</h2>
                 <nav class="portfolio__link">
-                    <a href="#" class="portfolio__link-item">все проекты</a>
-                    <a href="#" class="portfolio__link-item">экстерьеры</a>
-                    <a href="#" class="portfolio__link-item">жилые интерьеры</a>
-                    <a href="#" class="portfolio__link-item">общественные интерьеры</a>
+                    <a href="#" class="portfolio__link-item" data-filter="all">все проекты</a>
+                    <a href="#" class="portfolio__link-item" data-filter="item1">экстерьеры</a>
+                    <a href="#" class="portfolio__link-item" data-filter="item2">жилые интерьеры</a>
+                    <a href="#" class="portfolio__link-item" data-filter="item3">общественные интерьеры</a>
                 </nav>
 
                 <div class="portfolio__gallery">
-                    <div class="portfolio__gallery-item"><img src="./img/portf1.png" alt=""></div>
-                    <div class="portfolio__gallery-item"><img src="./img/portf2.png" alt=""></div>
-                    <div class="portfolio__gallery-item"><img src="./img/portf3.png" alt=""></div>
-                    <div class="portfolio__gallery-item"><img src="./img/portf4.png" alt=""></div>
-                    <div class="portfolio__gallery-item"><img src="./img/portf5.png" alt=""></div>
-                    <div class="portfolio__gallery-item"><img src="./img/portf6.png" alt=""></div>
+                    <div class="portfolio__gallery-item" data-cat="item1"><img src="./img/portf1.png" alt=""></div>
+                    <div class="portfolio__gallery-item" data-cat="item2"><img src="./img/portf2.png" alt=""></div>
+                    <div class="portfolio__gallery-item" data-cat="item3"><img src="./img/portf3.png" alt=""></div>
+                    <div class="portfolio__gallery-item" data-cat="item1"><img src="./img/portf4.png" alt=""></div>
+                    <div class="portfolio__gallery-item" data-cat="item2"><img src="./img/portf5.png" alt=""></div>
+                    <div class="portfolio__gallery-item" data-cat="item3"><img src="./img/portf6.png" alt=""></div>
                 </div>
                 <!-- /.portfolio__gallery -->
             </div>
@@ -354,5 +354,48 @@
         <!-- /.contain -->
     </section>
     <!-- /.question-section -->
+    <section class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2171.8892050787526!2d40.95678931548084!3d57.01920290107697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414d15b46c314091%3A0xe542592cf3f30711!2z0YPQuy4g0JXRgNC80LDQutCwLCDQmNCy0LDQvdC-0LLQviwg0JjQstCw0L3QvtCy0YHQutCw0Y8g0L7QsdC7LiwgMTUzMDI1!5e0!3m2!1sru!2sru!4v1585811248410!5m2!1sru!2sru" width="100%"   allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </section>
+    <!-- /.map -->
+
+    <footer class="footer__section">
+        <div class="contain">
+            <div class="footer">
+                <div class="footer__block">
+                    <div class="footer__item-links">
+                        <a href="#" class="footer__link">Главная</a>
+                        <a href="#" class="footer__link">Тарифы</a>
+                        <a href="#" class="footer__link">Вопросы-ответы</a>
+                        <a href="#" class="footer__link">Личный кабинет</a>
+                        <a href="#" class="footer__link">Новости</a>
+                        <a href="#" class="footer__link">Договор оферты</a>
+                    </div>
+                    <div class="footer__social">
+                        <p>Мы в социальных сетях:</p>
+                        <div class="footer__links">
+                            <a href="#" class="footer__social-link facebook"></a>
+                        <a href="#" class="footer__social-link instagram"></a>
+                        <a href="#" class="footer__social-link google"></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.footer__block -->
+                <div class="footer__sertification">
+                    <p>© Kazteleport, 2015. Все права защищены</p>
+                    <div class="footer__god">
+                        <a href="#">Создание сайта - lisenko.wibsite</a>
+                    </div>
+                    <!-- /.footer__god -->
+                </div>
+            </div>
+            <!-- /.footer -->
+        </div>
+        <!-- /.contain -->
+    </footer>
+    <!-- /.footer__section -->
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>

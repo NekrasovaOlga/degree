@@ -1,0 +1,61 @@
+.footer
+    padding-top: 43px
+    color: #91918f
+    position: relative
+    &__section
+        background: #24241f
+    &__block
+        display: flex
+        justify-content: space-between
+        padding-bottom: 40px
+        border-bottom: 1px solid #91918f
+    &__item-links
+        display: flex
+        max-width: 500px
+        width: 100%
+        flex-wrap: wrap
+    &__link
+        width: 30%
+        color: #91918f
+        margin-bottom: 20px
+    &__links
+        display: flex
+        margin-top: 10px
+    &__social
+        display: flex
+        flex-direction: column
+        &-link
+            width: 30px
+            height: 30px
+            position: relative
+            border: 1px solid #fff
+            border-radius: 5px
+            display: flex
+            margin-right: 7px
+            &::after
+                position: absolute
+                +fontello
+                
+                color: #fff
+                top: 50%
+                left: 50%
+                transform: translate(-50%,-50%)
+                font-size: 18px
+    &__sertification
+        display: flex
+        justify-content: space-between
+        padding: 50px 0
+    &__god
+        a
+            color: #91918f
+
+
+.facebook
+    &::after
+        content: '\f30c'
+.instagram
+    &::after
+        content: '\f30f'
+.google
+    &::after
+        content: '\f32d'
