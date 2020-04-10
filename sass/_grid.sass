@@ -6,6 +6,7 @@
     margin: 0 auto
     +roboto
     font-size: 14px
+    overflow: hidden
 a
     text-decoration: none
     outline: none
@@ -16,7 +17,7 @@ a
     justify-content: center
     padding-top: 63px
     position: relative
-    font-size: 36px
+    font-size: 2em
     padding-bottom: 25px
     margin-bottom: 40px
     color: #464646
@@ -27,3 +28,11 @@ a
         height: 2px
         bottom: 0
         background: #19b5fe
+
+@media screen and ( max-width: 1199px ) and (min-width: 0)
+    .contain 
+        width: 90%
+    
+@media screen and ( max-width: 600px ) and (min-width: 0)
+    .titles
+        font-size: 1.7em

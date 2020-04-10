@@ -19,3 +19,13 @@ $(function(){
         }
     });
 });
+
+
+$(document).ready(function(){
+    $('.company__slider').slick({
+        infinite: true,
+        slidesToShow: 5,
+        slidesToScroll: 3,
+        slickPrev: false
+    });
+  });

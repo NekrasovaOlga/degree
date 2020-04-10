@@ -12,14 +12,16 @@
         width: 87%
         &-item
             color: #19b5fe
-            padding: 0 30px
-            width: 100%
+            width: 25%
             display: flex
             align-items: center
             justify-content: center
             height: 50px
             position: relative
             transition: 0.3s all
+            &:nth-child(4)
+                width: 40%
+                
             &:hover
                 background: #19b5fe
                 color: #ffffff
@@ -40,9 +42,49 @@
         flex-wrap: wrap 
         margin-bottom: 20px
         align-content: start
+        justify-content: space-between
         &-item
             margin-bottom: 30px
-            width: 33%
+            width: 30%
+            img
+                width: 100%
                 
 .hide
     display: none
+
+@media screen and ( max-width: 1000px ) and (min-width: 0)
+    .portfolio
+        &__link
+            width: 100%
+        &__gallery
+            &-item
+                width: 48%
+@media screen and ( max-width: 780px ) and (min-width: 0)
+    .portfolio
+        &__link
+            flex-wrap: wrap
+            &-item
+                width: 50%
+                &::after
+                    position: absolute
+                    content: ''
+                    width: 100%
+                    background: #19b5fe
+                    height: 1px
+                    bottom: 0
+                    right: 0
+                &:nth-child(4)
+                    width: 50%
+                    &::after
+                        display: none
+                &:nth-child(3)
+                    &::after
+                        display: none
+@media screen and ( max-width: 528px ) and (min-width: 0)
+    .portfolio
+        &__link
+            display: none
+        &__gallery
+            justify-content: center
+            &-item
+                width: 80%

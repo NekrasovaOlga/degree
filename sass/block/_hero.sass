@@ -1,19 +1,21 @@
 .hero
     position: relative
-    padding-top: 5%
     display: flex
     align-items: center
     justify-content: center
     flex-direction: column
     color: #ffffff
+    text-align: center
+    min-height: 80vh
+    padding: 0 0 25px 0
     &__title
-        font-size: 48px
+        font-size: 3em
         display: flex
         flex-direction: column
         text-align: center
         font-weight: bold
         span
-            font-size: 36px
+            font-size: 0.9em
     &__description
         margin: 46px 0
         font-size: 22px
@@ -103,3 +105,75 @@
         justify-content: center
         left: 50%
         transform: translate(-50%, 0)
+@media screen and ( max-width: 920px ) and (min-width: 835px)
+    .hero
+        &__form
+            &::before, &::after
+                display: none
+            &-inputs
+                display: flex
+                flex-direction: rows
+                margin-bottom: 0
+                top: 0
+                &::before, &::after
+                    display: none
+                input
+                    margin-bottom: 15px
+            &-btn
+                &::before, &::after
+                    display: none
+        &__mouse
+            display: none
+
+@media screen and ( max-width: 835px ) and (min-width: 500px)
+    .hero
+        &__title
+            margin-top: 25px
+            font-size: 2.5em
+        &__form
+            width: 100%
+            &::before, &::after
+                display: none
+            &-inputs
+                display: flex
+                flex-direction: column
+                margin-bottom: 0
+                top: 0
+                width: 80%
+                &::before, &::after
+                    display: none
+                input
+                    margin-bottom: 15px
+                    margin-right: 0
+                    width: 100%
+            &-btn
+                &::before, &::after
+                    display: none
+        &__mouse
+            display: none
+@media screen and ( max-width: 547px ) and (min-width: 0)
+    .hero
+        &__title
+            font-size: 2em
+        &__description
+            font-size: 1.3em
+            margin: 25px 0
+        &__form
+            width: 100%
+            &::before, &::after
+                display: none
+            &-inputs
+                display: none
+            &-btn
+                &::before, &::after
+                    display: none
+            button
+                width: 100%
+        &__mouse
+            display: none
+
+@media screen and ( max-width: 390px ) and (min-width: 0)
+    .hero
+        &__description
+            font-size: 1.3em
+            margin: 25px 0

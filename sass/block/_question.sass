@@ -13,8 +13,9 @@
         &::after
             background: #fff
     &-description
-        font-size: 26px
+        font-size: 1.7em
         margin-bottom: 50px
+        text-align: center
     &__block
         display: flex
         margin-bottom: 60px
@@ -43,8 +44,7 @@
             display: flex
             justify-content: space-between
             input
-                max-width: 240px
-                width: 100%
+                width: 30%
                 height: 50px
                 padding: 15px 15px
                 border-radius: 10px
@@ -60,6 +60,7 @@
     &__contact
         margin-left: 30px
         position: relative
+        line-height: 24px
         &-phone
             &::after
                 content: '\e800'
@@ -98,3 +99,32 @@
             align-items: center
             justify-content: center
             
+@media screen and ( max-width: 927px ) and (min-width: 600px)
+    .question
+        
+        &__form
+            width: 60%
+            &-input
+                flex-direction: column
+                input
+                    width: 100%
+                    margin-bottom: 15px
+            textarea
+                margin-top: 0
+@media screen and ( max-width: 599px ) and (min-width: 0)
+    .question
+        &__block
+            flex-direction: column
+        &-description
+            font-size: 1.5em
+        &__form
+            width: 100%
+            &-input
+                flex-direction: column
+                input
+                    width: 100%
+                    margin-bottom: 15px
+            textarea
+                margin-top: 0
+        &__contact
+            display: none
