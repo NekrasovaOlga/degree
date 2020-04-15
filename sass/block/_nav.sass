@@ -10,7 +10,8 @@
     display: flex
     color: #ffffff
     justify-content: space-between
-    padding-top: 50px
+    padding-top: 30px
+    padding-bottom: 50px
     &__logo
         font-size: 28px
         font-weight: bold
@@ -39,14 +40,19 @@
             &_span
                 position: absolute
                 width: 46px
+                align-items: center
+                justify-content: center
+                display: flex
                 height: 3px
                 background: #ffffff
+                z-index: 100
                 &::before, &::after
                     position: absolute
                     content: ''
                     width: 46px
                     height: 3px
                     background: #ffffff
+                    transition: 0.5s all
                 &::after
                     top: 0
                     margin-top: -8px
@@ -58,10 +64,30 @@
                 margin-top: 19px
                 text-transform: uppercase
                 font-size: 12px
-
-                    
+.burger-active
+    span
+        top: -10px
+        background: none
+        z-index: 999
+        width: 30px
+        height: 30px
+        &::before
+            background: #19b5fe
+            width: 30px
+            transform: rotate(130deg)
+            margin-bottom: 0
+            top: 10px
+        &::after
+            background: #19b5fe
+            width: 30px
+            transform: rotate(-130deg) 
+            margin-top: 0
+            top: 10px
+            
+                   
 @media screen and ( max-width: 576px ) and (min-width: 0)
     .nav
-        &__menu
+        &__menu  
             &-cell
                 display: none
+                    

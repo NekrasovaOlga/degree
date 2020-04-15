@@ -27,12 +27,20 @@
                             <a href="tel:+78002590936">8 (800) 259 09 36</a>
                         </div>
                     </div>
-                    <div class="nav__menu-burger">
+                    <div class="nav__menu-burger" id="menu">
                         <span class="nav__menu-burger_span"></span>
                         <p>Меню</p>
                     </div>
                     <!-- /.nav__menu-burger -->
                 </div>
+                <nav class="navigation" id='nav'>
+                    <a href="#" class="navigation__link">Главная</a>
+                    <a href="#" class="navigation__link">Личный кабинет</a>
+                    <a href="#" class="navigation__link">Тарифы</a>
+                    <a href="#" class="navigation__link">Новости</a>
+                    <a href="#" class="navigation__link">Вопросы-ответы</a>
+                    <a href="#" class="navigation__link">Договор оферты</a>
+                </nav>
             </section>
             <!-- /.nav -->
         <section class="hero">
@@ -45,8 +53,8 @@
            <form action="./js/send.php" class="hero__form" method="POST">
                 <div class="hero__form-inputs">
                 <input type="text" name="message" id="message_name" placeholder="Ваше имя">
-           <!--   <input type="email" name="message" id="message_email" placeholder="E-mail">
-                <input type="tel" name="message" id="message_tel" placeholder="Номер телефона">-->
+           <input type="email" name="message" id="message_email" placeholder="E-mail">
+                <input type="tel" name="message" id="message_tel" placeholder="Номер телефона">
                 </div>
                 <div class="hero__form-btn" type="submit"><button >Оставить заявку!</button></div>
             </form>
@@ -444,5 +452,8 @@
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script type="text/javascript" src="./js/slick.min.js"></script>
     <script src="./js/script.js"></script>
+    <script>
+        menu();
+    </script>
 </body>
 </html>
