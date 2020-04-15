@@ -42,13 +42,13 @@
             <span class="hero__description">
                 Оставьте заявку сейчас и получите дизайн интерьера 25кв2 бесплатно!*
             </span>
-            <form action="POST" class="hero__form">
+           <form action="./js/send.php" class="hero__form" method="POST">
                 <div class="hero__form-inputs">
                 <input type="text" name="message" id="message_name" placeholder="Ваше имя">
-                <input type="email" name="message" id="message_email" placeholder="E-mail">
-                <input type="tel" name="message" id="message_tel" placeholder="Номер телефона">
+           <!--   <input type="email" name="message" id="message_email" placeholder="E-mail">
+                <input type="tel" name="message" id="message_tel" placeholder="Номер телефона">-->
                 </div>
-                <div class="hero__form-btn"><button >Оставить заявку!</button></div>
+                <div class="hero__form-btn" type="submit"><button >Оставить заявку!</button></div>
             </form>
             <a href="#" class="hero__confidicial">*Мы гарантируем конфидициальность передаваемых данных</a>
 
@@ -100,6 +100,43 @@
     </section>
     <!-- /.services=section -->
 
+    <section class="calc-section">
+        <div class="contain">
+            <div class="calc">
+                <h2 class="titles question__title">Расчитать стоимость</h2>
+                <span class="calc__description">Расчитайте предварительную стоимость разработки интерьера</span>
+                <div class="calc__block">
+                    <div class="calc__block-item ">
+                        <div class="calc__btns">
+                            <span>Площадь помещения:</span>
+                            <input type="range" name="range" id="range" value="0" min="0" max="1000" class="range__slider">
+                        </div>
+                        <div class="calc__btns">
+                            <span>Выберите пакет:</span>
+                            <div class="calc__btns-item">
+                                <button id="light">Light</button>
+                                <button id="medium">Medium</button>
+                                <button id="full">Full</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="calc__block-result">
+                        <p>Площадь помещения</p>
+                        <span id="area">1000 m2</span>
+                        <p>Средняя стоимость м2:</p>
+                        <span id=""> 4 850 тг.</span>
+                        <p>Средняя стоимость объекта:</p>
+                        <span id="">48 500 тг.</span>
+                        <div class="calc-btn"><button >Получить консультацию специалиста</button></div>
+                        <p>или позвоните нам по телефону:</p>
+                        <a href="tel:+77273887177"> + 7 727 388 71 77</a>
+                    </div>
+                </div>
+            </div>
+            <!-- /.calc -->
+        </div>
+    </section>
+    <!-- /.calc-section -->
 
     <section class="portfolio-section">
         <div class="contain">
@@ -334,7 +371,7 @@
                 <span class="question-description">Задайте их в форме ниже и наши специалисты свяжуться с Вами!</span>
 
                 <div class="question__block">
-                    <form action="POST" class="question__form">
+                    <form action="POST" method="post" class="question__form">
                         <div class="question__form-input">
                             <input type="text" name="question" id="text" placeholder="Ваше имя">
                             <input type="email" name="question" id="email" placeholder="Ваш e-mail">
