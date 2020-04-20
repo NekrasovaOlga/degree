@@ -26,7 +26,6 @@
   margin: 0 auto;
   font-family: 'Roboto';
   font-size: 14px;
-  overflow: hidden;
 }
 
 a {
@@ -811,6 +810,21 @@ a {
   line-height: 30px;
 }
 
+.calc-light {
+  display: none;
+  left: -100px;
+}
+
+.calc-medium {
+  display: none;
+  left: 120px;
+}
+
+.calc-full {
+  display: none;
+  right: -110px;
+}
+
 .calc-btn {
   margin-bottom: 26px;
 }
@@ -847,23 +861,59 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-bottom: 10px;
+  position: relative;
 }
 
-.calc__btns span {
+.calc__btns-title {
   font-size: 1.5em;
+  margin-bottom: 25px;
 }
 
 .calc__btns-item {
-  margin-top: 25px;
+  position: relative;
+}
+
+.calc__btns-item:hover .calc__btns-txt {
+  display: inline-block;
+}
+
+.calc__btns-txt {
+  max-width: 445px;
+  width: 100%;
+  background: #fff;
+  color: #000;
+  position: absolute;
+  bottom: -125px;
+  padding: 30px 35px;
+  text-align: center;
+  line-height: 24px;
+  -webkit-box-shadow: 0 0 3px 0 #bebebe;
+          box-shadow: 0 0 3px 0 #bebebe;
+}
+
+.calc__btns-txt::after {
+  position: absolute;
+  content: '';
+  width: 40px;
+  height: 40px;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+  top: -20px;
+  left: 45%;
+  background: #fff;
+}
+
+.calc__btns-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
 }
 
-.calc__btns-item button {
+.calc__btns-block button {
   width: 195px;
   height: 48px;
   outline: none;
@@ -876,7 +926,7 @@ a {
   transition: 0.3s all;
 }
 
-.calc__btns-item button:hover {
+.calc__btns-block button:hover {
   background: #19b5fe;
   border-color: #19b5fe;
 }
@@ -898,6 +948,10 @@ a {
   background: #19b5fe;
   border-radius: 15px;
   position: relative;
+}
+
+.light:hover .calc__btns-title {
+  color: red;
 }
 
 .portfolio__link {
@@ -1137,6 +1191,31 @@ a {
 
 .company__item {
   width: 20%;
+}
+
+.swiper-wrapper {
+  margin-bottom: 50px;
+}
+
+.swiper-scrollbar-dra {
+  height: 12px;
+  top: -4px;
+  border-radius: 5px;
+  background: #19b5fe;
+  position: absolute;
+}
+
+.swiper-scrollbar-dra::after {
+  position: absolute;
+  content: ' ';
+  background: url(../img/pointer.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 9px;
+  height: 9px;
+  top: 1px;
+  left: 38%;
 }
 
 @media screen and (max-width: 766px) and (min-width: 0px) {

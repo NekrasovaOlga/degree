@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" type="text/css" href="./css/slick.css"/>
+    <link rel="stylesheet" href="./css/bootstrap-slider.min.css">
+    <link rel="stylesheet" href="./css/swiper.min.css">
     <title>Degree23</title>
 </head>
 <body>
@@ -116,23 +117,32 @@
                 <div class="calc__block">
                     <div class="calc__block-item ">
                         <div class="calc__btns">
-                            <span>Площадь помещения:</span>
-                            <input type="range" name="range" id="range" value="0" min="0" max="1000" class="range__slider">
+                            <span  class="calc__btns-title">Площадь помещения:</span>
+                            <input id="ex13" type="text" data-slider-ticks="[0, 100, 200, 300]" data-slider-ticks-snap-bounds="30" data-slider-ticks-labels='["100м2", "10 000м2", "250 000м2", "500 000м2"]'/>
                         </div>
                         <div class="calc__btns">
-                            <span>Выберите пакет:</span>
-                            <div class="calc__btns-item">
-                                <button id="light">Light</button>
-                                <button id="medium">Medium</button>
-                                <button id="full">Full</button>
+                            <span   class="calc__btns-title">Выберите пакет:</span>
+                            <div class="calc__btns-block">
+                                <div class="calc__btns-item light">
+                                    <button id="light">Light</button>
+                                </div>
+                                <div class="calc__btns-item">
+                                    <button id="medium">Medium</button>
+                                </div>
+                                <div class="calc__btns-item">
+                                    <button id="full">Full</button>
+                                </div>
                             </div>
+                            <span class="calc__btns-txt calc-light" id="text_btn">План расстановки мебели 3D визуализация. Все рабочие чертежи (план полов, план потолка, развертки по стенам, план электросетей)</span>
+                            <span class="calc__btns-txt calc-medium" id="text_btn">План расстановки мебели 3D визуализация. Все рабочие чертежи (план полов, план потолка, развертки по стенам, план электросетей)</span>
+                            <span class="calc__btns-txt calc-full" id="text_btn">План расстановки мебели 3D визуализация. Все рабочие чертежи (план полов, план потолка, развертки по стенам, план электросетей)</span>
                         </div>
                     </div>
                     <div class="calc__block-result">
                         <p>Площадь помещения</p>
                         <span id="area">1000 m2</span>
                         <p>Средняя стоимость м2:</p>
-                        <span id=""> 4 850 тг.</span>
+                        <span id="cell"> 4 850 тг.</span>
                         <p>Средняя стоимость объекта:</p>
                         <span id="">48 500 тг.</span>
                         <div class="calc-btn"><button >Получить консультацию специалиста</button></div>
@@ -286,13 +296,32 @@
         <div class="contain">
             <div class="company">
                 <h2 class="titles">Нам доверяют более 50 компаний</h2>
-                <div class="company__slider">
-                    <div class="company__item"><img src="./img/comp1.png" alt=""></div>
-                    <div class="company__item"><img src="./img/comp2.png" alt=""></div>
-                    <div class="company__item"><img src="./img/comp3.png" alt=""></div>
-                    <div class="company__item"><img src="./img/comp4.png" alt=""></div>
-                    <div class="company__item"><img src="./img/comp5.png" alt=""></div>
-                    <div class="company__item"><img src="./img/comp6.png" alt=""></div>
+
+                <div class="swiper-container">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper ">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img src="./img/comp1.png" alt=""></div>
+                        <div class="swiper-slide"><img src="./img/comp2.png" alt=""></div>
+                        <div class="swiper-slide"><img src="./img/comp3.png" alt=""></div>
+                        <div class="swiper-slide"><img src="./img/comp4.png" alt=""></div>
+                        <div class="swiper-slide"><img src="./img/comp5.png" alt=""></div>
+                        <div class="swiper-slide"><img src="./img/comp6.png" alt=""></div>
+                        <div class="swiper-slide"><img src="./img/comp2.png" alt=""></div>
+                        <div class="swiper-slide"><img src="./img/comp3.png" alt=""></div>
+                        <div class="swiper-slide"><img src="./img/comp4.png" alt=""></div>
+                        <div class="swiper-slide"><img src="./img/comp1.png" alt=""></div>
+                        <div class="swiper-slide"><img src="./img/comp2.png" alt=""></div>
+                        <div class="swiper-slide"><img src="./img/comp3.png" alt=""></div>
+                        <div class="swiper-slide"><img src="./img/comp4.png" alt=""></div>
+                        <div class="swiper-slide"><img src="./img/comp5.png" alt=""></div>
+                        <div class="swiper-slide"><img src="./img/comp6.png" alt=""></div>
+                        <div class="swiper-slide"><img src="./img/comp2.png" alt=""></div>
+                        <div class="swiper-slide"><img src="./img/comp3.png" alt=""></div>
+                        <div class="swiper-slide"><img src="./img/comp4.png" alt=""></div>
+                    </div>
+                    <!-- If we need scrollbar -->
+                    <div class="swiper-scrollbar scrollbar"></div>
                 </div>
             </div>
             <!-- /.company -->
@@ -450,10 +479,13 @@
     <!-- /.footer__section -->
 
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <script type="text/javascript" src="./js/slick.min.js"></script>
+    <script src="./js/bootstrap-slider.min.js"></script>
+    <script src="./js/swiper.min.js"></script>
     <script src="./js/script.js"></script>
     <script>
         menu();
+        pakt();
+
     </script>
 </body>
 </html>

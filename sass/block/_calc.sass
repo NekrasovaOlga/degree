@@ -34,6 +34,15 @@
                 color: #ffffff
                 font-weight: 600
                 line-height: 30px
+    &-light
+        display: none
+        left: -100px
+    &-medium
+        display: none
+        left: 120px
+    &-full
+        display: none
+        right: -110px
     &-btn
         margin-bottom: 26px
         button
@@ -55,12 +64,38 @@
         display: flex
         flex-direction: column
         margin-bottom: 10px
-        span
+        position: relative
+        &-title
             font-size: 1.5em
+            margin-bottom: 25px
         &-item
-            margin-top: 25px
+            position: relative
+            &:hover .calc__btns-txt
+                display: inline-block
+        &-txt
+            max-width: 445px
+            width: 100%
+            background: #fff
+            color: #000
+            position: absolute
+            bottom: -125px
+            padding: 30px 35px
+            text-align: center  
+            line-height: 24px   
+            box-shadow: 0 0 3px 0 #bebebe
+            &::after
+                position: absolute
+                content: ''
+                width: 40px
+                height: 40px
+                transform: rotate(135deg)
+                top: -20px
+                left: 45%
+                background: #fff
+        &-block
             display: flex
             justify-content: space-between
+            position: relative
             button
                 width: 195px
                 height: 48px
@@ -89,4 +124,6 @@
         background: #19b5fe
         border-radius: 15px
         position: relative
-            
+
+.light:hover .calc__btns-title
+    color: red

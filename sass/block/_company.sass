@@ -8,6 +8,25 @@
         align-content: start
     &__item
         width: 20%
+.swiper-wrapper
+    margin-bottom: 50px
+.swiper-scrollbar-dra
+    height: 12px
+    top: -4px
+    border-radius: 5px
+    background: #19b5fe
+    position: absolute
+    &::after
+        position: absolute
+        content: ' '
+        background: url(../img/pointer.png)
+        background-position: center
+        background-repeat: no-repeat
+        background-size: contain
+        width: 9px
+        height: 9px
+        top: 1px
+        left: 38%
 @media screen and ( max-width: 766px ) and (min-width: 0px)
     .company-section
         display: none
